@@ -130,20 +130,6 @@ SettingsTab:CreateButton({
 })
 
 SettingsTab:CreateButton({
-    Name = "Light",
-    Callback = function()
-        Window.ModifyTheme('Light')
-    end,
-})
-
-SettingsTab:CreateButton({
-    Name = "Bloom",
-    Callback = function()
-        Window.ModifyTheme('Bloom')
-    end,
-})
-
-SettingsTab:CreateButton({
     Name = "Ocean",
     Callback = function()
         Window.ModifyTheme('Ocean')
@@ -203,6 +189,55 @@ SettingsTab:CreateButton({
     Name = "KirkHub",
     Callback = function()
         Window.ModifyTheme(KirkHubTheme)
+    end,
+})
+
+local AmericaTheme = {
+    TextColor = Color3.fromRGB(245, 245, 245),
+
+    Background = Color3.fromRGB(12, 18, 35),
+    Topbar = Color3.fromRGB(20, 30, 55),
+    Shadow = Color3.fromRGB(5, 8, 18),
+
+    NotificationBackground = Color3.fromRGB(15, 22, 40),
+    NotificationActionsBackground = Color3.fromRGB(190, 30, 45),
+
+    TabBackground = Color3.fromRGB(28, 42, 70),
+    TabStroke = Color3.fromRGB(55, 75, 110),
+    TabBackgroundSelected = Color3.fromRGB(190, 30, 45),
+    TabTextColor = Color3.fromRGB(230, 235, 245),
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),
+
+    ElementBackground = Color3.fromRGB(22, 32, 55),
+    ElementBackgroundHover = Color3.fromRGB(35, 48, 75),
+    SecondaryElementBackground = Color3.fromRGB(16, 24, 42),
+    ElementStroke = Color3.fromRGB(50, 70, 105),
+    SecondaryElementStroke = Color3.fromRGB(35, 50, 80),
+
+    SliderBackground = Color3.fromRGB(35, 55, 90),
+    SliderProgress = Color3.fromRGB(190, 30, 45),
+    SliderStroke = Color3.fromRGB(255, 255, 255),
+
+    ToggleBackground = Color3.fromRGB(25, 35, 55),
+    ToggleEnabled = Color3.fromRGB(190, 30, 45),
+    ToggleDisabled = Color3.fromRGB(75, 85, 105),
+    ToggleEnabledStroke = Color3.fromRGB(230, 50, 65),
+    ToggleDisabledStroke = Color3.fromRGB(110, 120, 140),
+    ToggleEnabledOuterStroke = Color3.fromRGB(45, 80, 145),
+    ToggleDisabledOuterStroke = Color3.fromRGB(45, 55, 75),
+
+    DropdownSelected = Color3.fromRGB(35, 50, 80),
+    DropdownUnselected = Color3.fromRGB(20, 30, 50),
+
+    InputBackground = Color3.fromRGB(18, 27, 45),
+    InputStroke = Color3.fromRGB(65, 90, 135),
+    PlaceholderColor = Color3.fromRGB(165, 180, 205),
+}
+
+SettingsTab:CreateButton({
+    Name = "America",
+    Callback = function()
+        Window.ModifyTheme(AmericaTheme)
     end,
 })
 
@@ -294,4 +329,3 @@ local function setBackground()
 end
 
 setBackground()
-
