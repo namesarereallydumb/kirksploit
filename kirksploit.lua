@@ -157,6 +157,55 @@ SettingsTab:CreateButton({
     end,
 })
 
+local KirkHubTheme = {
+    TextColor = Color3.fromRGB(245, 245, 245),
+
+    Background = Color3.fromRGB(13, 13, 13),
+    Topbar = Color3.fromRGB(25, 25, 25),
+    Shadow = Color3.fromRGB(5, 5, 5),
+
+    NotificationBackground = Color3.fromRGB(20, 20, 20),
+    NotificationActionsBackground = Color3.fromRGB(255, 121, 0),
+
+    TabBackground = Color3.fromRGB(35, 35, 35),
+    TabStroke = Color3.fromRGB(60, 45, 30),
+    TabBackgroundSelected = Color3.fromRGB(255, 121, 0),
+    TabTextColor = Color3.fromRGB(220, 220, 220),
+    SelectedTabTextColor = Color3.fromRGB(15, 15, 15),
+
+    ElementBackground = Color3.fromRGB(27, 27, 27),
+    ElementBackgroundHover = Color3.fromRGB(40, 32, 24),
+    SecondaryElementBackground = Color3.fromRGB(18, 18, 18),
+    ElementStroke = Color3.fromRGB(65, 45, 28),
+    SecondaryElementStroke = Color3.fromRGB(42, 35, 28),
+
+    SliderBackground = Color3.fromRGB(45, 35, 25),
+    SliderProgress = Color3.fromRGB(255, 121, 0),
+    SliderStroke = Color3.fromRGB(255, 157, 66),
+
+    ToggleBackground = Color3.fromRGB(30, 30, 30),
+    ToggleEnabled = Color3.fromRGB(255, 121, 0),
+    ToggleDisabled = Color3.fromRGB(75, 75, 75),
+    ToggleEnabledStroke = Color3.fromRGB(255, 157, 66),
+    ToggleDisabledStroke = Color3.fromRGB(100, 100, 100),
+    ToggleEnabledOuterStroke = Color3.fromRGB(95, 55, 20),
+    ToggleDisabledOuterStroke = Color3.fromRGB(50, 50, 50),
+
+    DropdownSelected = Color3.fromRGB(45, 32, 20),
+    DropdownUnselected = Color3.fromRGB(25, 25, 25),
+
+    InputBackground = Color3.fromRGB(24, 24, 24),
+    InputStroke = Color3.fromRGB(90, 55, 28),
+    PlaceholderColor = Color3.fromRGB(155, 155, 155),
+}
+
+SettingsTab:CreateButton({
+    Name = "KirkHub",
+    Callback = function()
+        Window.ModifyTheme(KirkHubTheme)
+    end,
+})
+
 -- Character peeking from side
 local IMAGE_URL = "https://files.catbox.moe/vw9pq2.png"
 local FILE_NAME = "kirksploit_bg.png"
@@ -245,3 +294,4 @@ local function setBackground()
 end
 
 setBackground()
+
