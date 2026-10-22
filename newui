@@ -3,6 +3,6 @@ getgenv().Config = {
 
     FakeDisplayName = "fuck moderators",
     FakeName = "fuck moderators",
-    FakeId = 42,
+    FakeId = 156,
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/NameHider/main/MainScript.lua"))()
