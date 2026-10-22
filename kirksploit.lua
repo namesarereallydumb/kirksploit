@@ -115,7 +115,7 @@ local BoxESPToggle = UtilsTab:CreateToggle({
 })
 
 UtilsTab:CreateButton({
-    Name = "new ui test",
+    Name = "Hide Username (Local)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/namesarereallydumb/kirksploit/refs/heads/main/newui",true))()
     end,
