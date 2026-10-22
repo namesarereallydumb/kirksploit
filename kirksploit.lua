@@ -45,6 +45,48 @@ local AmericaTheme = {
     PlaceholderColor = Color3.fromRGB(165, 180, 205),
 }
 
+local VoidTheme = {
+    TextColor = Color3.fromRGB(220, 220, 230),
+
+    Background = Color3.fromRGB(5, 5, 10),
+    Topbar = Color3.fromRGB(10, 10, 18),
+    Shadow = Color3.fromRGB(0, 0, 0),
+
+    NotificationBackground = Color3.fromRGB(8, 8, 14),
+    NotificationActionsBackground = Color3.fromRGB(100, 65, 180),
+
+    TabBackground = Color3.fromRGB(18, 18, 28),
+    TabStroke = Color3.fromRGB(40, 35, 60),
+    TabBackgroundSelected = Color3.fromRGB(100, 65, 180),
+    TabTextColor = Color3.fromRGB(200, 200, 215),
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),
+
+    ElementBackground = Color3.fromRGB(14, 14, 22),
+    ElementBackgroundHover = Color3.fromRGB(25, 20, 38),
+    SecondaryElementBackground = Color3.fromRGB(8, 8, 14),
+    ElementStroke = Color3.fromRGB(45, 35, 65),
+    SecondaryElementStroke = Color3.fromRGB(28, 25, 42),
+
+    SliderBackground = Color3.fromRGB(30, 25, 45),
+    SliderProgress = Color3.fromRGB(115, 75, 200),
+    SliderStroke = Color3.fromRGB(155, 115, 255),
+
+    ToggleBackground = Color3.fromRGB(18, 18, 28),
+    ToggleEnabled = Color3.fromRGB(115, 75, 200),
+    ToggleDisabled = Color3.fromRGB(55, 55, 70),
+    ToggleEnabledStroke = Color3.fromRGB(155, 115, 255),
+    ToggleDisabledStroke = Color3.fromRGB(85, 85, 100),
+    ToggleEnabledOuterStroke = Color3.fromRGB(55, 40, 90),
+    ToggleDisabledOuterStroke = Color3.fromRGB(30, 30, 42),
+
+    DropdownSelected = Color3.fromRGB(28, 22, 42),
+    DropdownUnselected = Color3.fromRGB(12, 12, 20),
+
+    InputBackground = Color3.fromRGB(12, 12, 20),
+    InputStroke = Color3.fromRGB(55, 45, 80),
+    PlaceholderColor = Color3.fromRGB(125, 125, 145),
+}
+
 local Window = Rayfield:CreateWindow({
     Name = "Kirksploit",
     LoadingTitle = "Kirksploit",
@@ -172,9 +214,9 @@ SettingsTab:CreateButton({
 })
 
 SettingsTab:CreateButton({
-    Name = "Ocean",
+    Name = "Void",
     Callback = function()
-        Window.ModifyTheme('Ocean')
+        Window.ModifyTheme(VoidTheme)
     end,
 })
 
