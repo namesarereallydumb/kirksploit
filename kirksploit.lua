@@ -72,6 +72,13 @@ local BoxESPToggle = UtilsTab:CreateToggle({
     end,
 })
 
+UtilsTab:CreateButton({
+    Name = "Hide Username (Local)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/namesarereallydumb/kirksploit/refs/heads/main/newui",true))()
+    end,
+})
+
 for _, player in pairs(players:GetPlayers()) do
     if player ~= players.LocalPlayer then
         player.CharacterAdded:Connect(function(character)
