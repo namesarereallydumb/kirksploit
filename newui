@@ -1,8 +1,8 @@
 getgenv().Config = {
     Headless = false,
 
-    FakeDisplayName = "Guest 0000",
-    FakeName = "Guest 0000",
+    FakeDisplayName = "Lorem ipsum",
+    FakeName = "Lorem ipsum",
     FakeId = 0,
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/NameHider/main/MainScript.lua"))()
