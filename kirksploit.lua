@@ -1,4 +1,5 @@
 -- hey man thanks for actually reading the source code, no one ever bothers to check loadstrings before they run it
+getgenv().RAYFIELD_ASSET_ID = 125340856366078
 local esplib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tulontop/esp-lib.lua/refs/heads/main/source.lua"))()
 
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
