@@ -3,12 +3,54 @@ local esplib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tulont
 
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 
+local AmericaTheme = {
+    TextColor = Color3.fromRGB(245, 245, 245),
+
+    Background = Color3.fromRGB(12, 18, 35),
+    Topbar = Color3.fromRGB(20, 30, 55),
+    Shadow = Color3.fromRGB(5, 8, 18),
+
+    NotificationBackground = Color3.fromRGB(15, 22, 40),
+    NotificationActionsBackground = Color3.fromRGB(190, 30, 45),
+
+    TabBackground = Color3.fromRGB(28, 42, 70),
+    TabStroke = Color3.fromRGB(55, 75, 110),
+    TabBackgroundSelected = Color3.fromRGB(190, 30, 45),
+    TabTextColor = Color3.fromRGB(230, 235, 245),
+    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),
+
+    ElementBackground = Color3.fromRGB(22, 32, 55),
+    ElementBackgroundHover = Color3.fromRGB(35, 48, 75),
+    SecondaryElementBackground = Color3.fromRGB(16, 24, 42),
+    ElementStroke = Color3.fromRGB(50, 70, 105),
+    SecondaryElementStroke = Color3.fromRGB(35, 50, 80),
+
+    SliderBackground = Color3.fromRGB(35, 55, 90),
+    SliderProgress = Color3.fromRGB(190, 30, 45),
+    SliderStroke = Color3.fromRGB(255, 255, 255),
+
+    ToggleBackground = Color3.fromRGB(25, 35, 55),
+    ToggleEnabled = Color3.fromRGB(190, 30, 45),
+    ToggleDisabled = Color3.fromRGB(75, 85, 105),
+    ToggleEnabledStroke = Color3.fromRGB(230, 50, 65),
+    ToggleDisabledStroke = Color3.fromRGB(110, 120, 140),
+    ToggleEnabledOuterStroke = Color3.fromRGB(45, 80, 145),
+    ToggleDisabledOuterStroke = Color3.fromRGB(45, 55, 75),
+
+    DropdownSelected = Color3.fromRGB(35, 50, 80),
+    DropdownUnselected = Color3.fromRGB(20, 30, 50),
+
+    InputBackground = Color3.fromRGB(18, 27, 45),
+    InputStroke = Color3.fromRGB(65, 90, 135),
+    PlaceholderColor = Color3.fromRGB(165, 180, 205),
+}
+
 local Window = Rayfield:CreateWindow({
     Name = "Kirksploit",
     LoadingTitle = "Kirksploit",
     LoadingSubtitle = "The menu that tastes like candy!",
     ConfigurationSaving = { Enabled = false },
-    Theme = "Ocean",
+    Theme = AmericaTheme,
 })
 
 local ScriptsTab = Window:CreateTab("Scripts", 4483362458)
@@ -73,7 +115,7 @@ local BoxESPToggle = UtilsTab:CreateToggle({
 })
 
 UtilsTab:CreateButton({
-    Name = "Hide Username (Local)",
+    Name = "new ui test",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/namesarereallydumb/kirksploit/refs/heads/main/newui",true))()
     end,
@@ -191,48 +233,6 @@ SettingsTab:CreateButton({
         Window.ModifyTheme(KirkHubTheme)
     end,
 })
-
-local AmericaTheme = {
-    TextColor = Color3.fromRGB(245, 245, 245),
-
-    Background = Color3.fromRGB(12, 18, 35),
-    Topbar = Color3.fromRGB(20, 30, 55),
-    Shadow = Color3.fromRGB(5, 8, 18),
-
-    NotificationBackground = Color3.fromRGB(15, 22, 40),
-    NotificationActionsBackground = Color3.fromRGB(190, 30, 45),
-
-    TabBackground = Color3.fromRGB(28, 42, 70),
-    TabStroke = Color3.fromRGB(55, 75, 110),
-    TabBackgroundSelected = Color3.fromRGB(190, 30, 45),
-    TabTextColor = Color3.fromRGB(230, 235, 245),
-    SelectedTabTextColor = Color3.fromRGB(255, 255, 255),
-
-    ElementBackground = Color3.fromRGB(22, 32, 55),
-    ElementBackgroundHover = Color3.fromRGB(35, 48, 75),
-    SecondaryElementBackground = Color3.fromRGB(16, 24, 42),
-    ElementStroke = Color3.fromRGB(50, 70, 105),
-    SecondaryElementStroke = Color3.fromRGB(35, 50, 80),
-
-    SliderBackground = Color3.fromRGB(35, 55, 90),
-    SliderProgress = Color3.fromRGB(190, 30, 45),
-    SliderStroke = Color3.fromRGB(255, 255, 255),
-
-    ToggleBackground = Color3.fromRGB(25, 35, 55),
-    ToggleEnabled = Color3.fromRGB(190, 30, 45),
-    ToggleDisabled = Color3.fromRGB(75, 85, 105),
-    ToggleEnabledStroke = Color3.fromRGB(230, 50, 65),
-    ToggleDisabledStroke = Color3.fromRGB(110, 120, 140),
-    ToggleEnabledOuterStroke = Color3.fromRGB(45, 80, 145),
-    ToggleDisabledOuterStroke = Color3.fromRGB(45, 55, 75),
-
-    DropdownSelected = Color3.fromRGB(35, 50, 80),
-    DropdownUnselected = Color3.fromRGB(20, 30, 50),
-
-    InputBackground = Color3.fromRGB(18, 27, 45),
-    InputStroke = Color3.fromRGB(65, 90, 135),
-    PlaceholderColor = Color3.fromRGB(165, 180, 205),
-}
 
 SettingsTab:CreateButton({
     Name = "America",
