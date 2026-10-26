@@ -124,6 +124,15 @@ ScriptsTab:CreateButton({
     end,
 })
 
+ScriptsTab:CreateButton({
+    Name = "Parkour",
+    Callback = function()
+        pcall(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/namesarereallydumb/kirksploit/refs/heads/main/parkour.lua"))()
+        end)
+    end,
+})
+
 local UtilsTab = Window:CreateTab("Utils", 4483362458)
 
 local boxESPActive = false
@@ -157,7 +166,7 @@ local BoxESPToggle = UtilsTab:CreateToggle({
 })
 
 UtilsTab:CreateButton({
-    Name = "Hide Username (Local)",
+    Name = "Cloak Username (Local)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/namesarereallydumb/kirksploit/refs/heads/main/newui",true))()
     end,
